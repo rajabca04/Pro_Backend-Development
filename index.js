@@ -50,11 +50,6 @@ app.get('/api/v1/:token', (req, res)=>{
     res.status(200).json({param: req.params.token})
 })
 
-
-// app.get('/test', (req, res)=>{
-//     res.status(400).sendFile(__dirname + '/page.html')
-// })
-
 app.listen(PORT, ()=>{
     console.log(`Server is running on port ${PORT}`);
 })
